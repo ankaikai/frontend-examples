@@ -36,7 +36,7 @@ const state = {
   }
 }
 
-export let addPosts = (props) => {
+export let addPosts = (props) => { // добавляем postitem на стену
   let newPost = {
     name: 'Anton',
     message: state.profilePage.newPostText,
