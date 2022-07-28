@@ -19,10 +19,10 @@ const styles = {
     } 
 }
 const ToDoItem = ({ todo, index, onChange }) => {
-    const { removeToDo } = useContext(Context) // Создаем removeToDo куда передаем наш функционал из Context.Provide
+    const { removeToDo } = useContext(Context) // записываем метод removeToDo в removeTodDo используя useContext
     
-    const classes = []  // массив стилей
-    if (todo.completed) {  // если completed = true добавляем class done в classes
+    const classes = [] // массив стилей
+    if (todo.completed) {  
         classes.push('done')
     }
 
