@@ -22,7 +22,7 @@ const ToDoList = (props) => {
     return (
         <div className={styles.toDoWrapper} style={styles.toDoWrapper}>
             <ul style={styles.ul}>
-                {props.todos.map((todo, i) => <ToDoItem todo={todo} key={todo.id} index={i} onChange={props.onToggle} />)}   {/* Мапим через props наш миссив todos из App на ToDoItem*/}
+                {props.todos.map((todo, i) => <ToDoItem todo={todo} key={todo.id} index={i} onChange={props.onToggle} />)}   {/* Мапим массив todos на ToDoItem*/}
             </ul>
         </div>
     )
