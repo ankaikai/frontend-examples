@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="head">
+        <h1 class="head">
+            <a class="logo" href="index.html">SUSHI MENU</a> 
+        </h1>
+    </header>
+    <div class="pageMain">
+    <div class="sushiMain">
+        <div class="checkBoxes">
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox1" name="contact" value="California">
+            <label for="california">
+                    California               
+                    <img src="https://rikisu.ru/wp-content/uploads/2019/07/california-300x300.png" alt="California">    
+            </label>
+            <input type="number" id="california" value="0" data-price="10">            
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox2" name="contact" value="Filadelfia">
+            <label for="filadelfia">
+                    Filadelfia
+                    <img src="https://tornadoo.ru/wp-content/uploads/2021/10/losos-5-300x300.png" alt="Filadelfia">           
+            </label>
+            <input type="number" id="filadelfia" value="0" data-price="12">  
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox3" name="contact" value="Green Dragon">
+            <label for="greenDragon">
+                Green Dragon
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHnWKHAvI1Qe33LtqTzrIh886_BMj47-25gA&usqp=CAU" alt="Green Dragon">
+            </label>
+            <input type="number" id="greenDragon" value="0" data-price="13">  
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox4" name="contact" value="Red Dragon">
+            <label for="redDragon">
+                Red Dragon
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_TH6Vi8BTwmvH3GFVNBk6TdxU5f-w5znpcg&usqp=CAU" alt="Red Dragon">
+            </label>
+            <input type="number" id="redDragon" value="0" data-price="13"> 
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox5" name="contact" value="Gold Dragon">
+            <label for="goldDragon">
+                Gold Dragon
+                <img src="https://sushi-point.com.ua/uploads/product/big/zolotoj-drakon.jpg" alt="Gold Dragon">
+            </label>
+            <input type="number" id="goldDragon" value="0" data-price="14"> 
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox6" name="contact" value="Sushi Set №1">
+            <label for="set1">
+                Sushi Set №1
+                <img src="https://www.rovero.net/wp-content/uploads/2022/04/-e1649889968736.png" alt="Sushi Set 1">
+            </label>
+            <input type="number" id="set1" value="0" data-price="15"> 
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox7" name="contact" value="Sushi Set №2">
+            <label for="set2">
+                Sushi Set №2
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_Bu9Q-wtsCclIhMyPnJ5_r7gcTNWOKmzdA&usqp=CAU" alt="Sushi Set 2">
+            </label>
+            <input type="number" id="set2" value="0" data-price="20"> 
+        </div>
+        <div class="inputContainer">
+            <input type="checkbox" id="checkbox8" name="contact" value="Sushi Set №3">
+            <label for="set3">
+                Sushi Set №3
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8SkqcSnrck85fVRc-KOxUoP8GAj0DJHZw0g&usqp=CAU" alt="Sushi Set 3">            
+            </label>
+            <input type="number" id="set3" value="0" data-price="25"> 
+        </div>
+        </div>
+        <div class="listBox">
+            <p>Your choice:</p>
+            <p id="resultList"></p>
+        </div>    
+        <div class="payBox">
+            <p>To Pay:</p>
+            <p id="toPay">0</p>
+        </div>  
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
