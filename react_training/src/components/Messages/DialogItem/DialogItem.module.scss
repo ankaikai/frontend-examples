@@ -1,0 +1,9 @@
+.dialogItems {
+    grid-area: dialogs;
+  .dialogLink {
+    width: 100%;
+  }
+  .activeLink {
+    color: gold;
+  }
+}

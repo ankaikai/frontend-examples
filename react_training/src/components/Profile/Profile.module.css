@@ -1,0 +1,7 @@
+.content {
+  grid-area: c;
+  background-color: rgb(37, 37, 37);
+  position: relative;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}

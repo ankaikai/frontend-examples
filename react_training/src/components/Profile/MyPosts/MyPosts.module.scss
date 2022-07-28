@@ -1,0 +1,33 @@
+.content {
+  width: 610px;
+  height: 100%;
+  margin: 0 auto;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  float: right;
+  border-radius: 10px;
+}
+.textArea {
+  resize: none;
+  height: 100px;
+  &:focus {
+    overflow: auto;
+  }
+}
+.btn {
+  padding: 3px;
+  margin: 3px;
+  font-weight: 600;
+  background-color: rgb(0, 160, 255);
+  border-radius: 7px;
+  border: 1px solid rgb(255, 255, 255);
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(1.05);
+  }
+}
