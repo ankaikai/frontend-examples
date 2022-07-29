@@ -15,9 +15,9 @@ function AddToDo({onCreate}) {
     const [value, setValue] = useState('')
 
     function submitHandler(event) {
-        event.preventDefault()  // чтобы страница не перезагружалась
-        if (value.trim()) {  // если инпут пустой
-            onCreate(value) // функция AddToDo в App, 
+        event.preventDefault() 
+        if (value.trim()) {  
+            onCreate(value) // метод AddToDo в APP
         }
     }
 

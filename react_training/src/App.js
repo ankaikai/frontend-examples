@@ -14,13 +14,13 @@ const App = (props) => {
     { id: 2, completed: false, title: "Buy second" },
     { id: 3, completed: false, title: "Buy some" }
   ])
-  function toggleToDo(id) {
+  function toggleToDo(id) {  // При изменении checkbox менется todos.completed
     setTodos(
       todos.map(todo => {
-        if (todo.id === id) {   // Если id массива совпадает с id выбранного элемента меняем False на True
-          todo.completed = !todo.completed   // False to True to False
+        if (todo.id === id) {   
+          todo.completed = !todo.completed  
         }
-        return todo // возвращаем измененный массив
+        return todo
       })
     )
   }
@@ -28,7 +28,7 @@ const App = (props) => {
     setTodos(todos.filter(todo => todo.id !== id))
   }
   function addToDo(title) {
-    setTodos(todos.concat([{   // присоеденяем массив из input
+    setTodos(todos.concat([{ 
       title,
       id: Date.now(),
       completed: false
@@ -37,7 +37,7 @@ const App = (props) => {
   }
   return (
     <BrowserRouter >
-      <Context.Provider value={{ removeToDo: removeToDo }}> {/*Чтобы передать функцию по удалению элемента оборачиваем все в Context.Provider*/}
+      <Context.Provider value={{ removeToDo: removeToDo }}>
         <div className='app-wrapper-grid'>
           <Header name='Anton' age='99' />
           <Navbar />
