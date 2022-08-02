@@ -64,34 +64,26 @@ const quotes = [   // Quotes set
         author: "Franklin D. Roosevelt"
     }
 ];
-const colors = [   // Colors set
-    'pink', 'orange', 'violet', 'yellow',
-    'white', 'green', 'teal', 'cyan', 'grey',
-    'olive', 'brown', 'purple', 'magenta'
-];
 // Quote change method
-const newQuote = () => {
-    // Random quote+author change
-    let randQ = Math.floor(Math.random() * quotes.length);
-    text.textContent = quotes[randQ].quote;
-    $(document).ready(function () {
+$(document).ready(function () {
+    const newQuote = () => {
+
+        // Random quote+author change
+        let randQ = Math.floor(Math.random() * quotes.length);
         $('#quote').text(quotes[randQ].quote);
         $('#auth').text(quotes[randQ].author);
-    });
 
-    // Random color change
-    let randC = Math.floor(Math.random() * colors.length);
-    $(document).ready(function () {
-        $('#quote-box').css('background-color', colors[randC]);
-    });
-}
+        // Random color change
+        let red = Math.floor(Math.random() * 255);
+        let green = Math.floor(Math.random() * 255);
+        let blue = Math.floor(Math.random() * 255);
+        $('#quote-box').css('background-color', `rgba(${red}, ${green}, ${blue}, 0.3)`);
+    }
+    // First call of quotes
+    newQuote();
 
-// First call of quotes
-newQuote();
-
-// Change quotes after mouse click
-$(document).ready(function () {
-    $('button').click(() => {
+    // Change quotes after mouse click
+    $('#new-quote').click(() => {
         newQuote();
     });
 });
